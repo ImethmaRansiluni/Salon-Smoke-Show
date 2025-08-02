@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoke Show Salon - Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f9f9f9;
+        padding-top: 80px;
+      }
+
+      .navbar {
+        padding: 0;
+      }
+
+      .NavContainer {
+        background: linear-gradient(90deg, #f30b96, #ef67bf);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        position: fixed; /* 🔐 Make navbar fixed */
+        top: 0;
+        left: 0;
+        z-index: 999; /* 🧷 Ensure it's above everything */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #000000 !important;
+        font-weight: 500;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: white !important;
+        text-decoration: none;
+      }
+
+      .navbar-toggler {
+        width: 30px;
+        height: 30px;
+        background-image: url("hambuger.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      .navbar-toggler:focus:not(:focus-visible) {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .service-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .section-title {
+        font-weight: bold;
+        color: #f30b96;
+      }
+
+      .footer-link {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-link:hover {
+        color: black;
+      }
+
+      section.text-center p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .navbar-brand h1 {
+          font-size: 20px;
+          line-height: 1;
+        }
+
+        section.text-center p {
+          font-size: 0.85rem;
+          line-height: 0.8;
+        }
+
+        .NavContainer {
+          height: auto;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid NavContainer">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="logo1.png"
+              alt="Logo"
+              width="100"
+              height="100"
+              class="img-fluid"
+            />
+            <h1 style="font-style: italic">Smoke Show</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
+          ></button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-5" style="background-color: #f8f8f8">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">✨ Our Signature Services</h2>
+          <p class="text-muted">
+            Indulge in a world of beauty and relaxation tailored just for you.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img
+                src="ap1.jpg"
+                class="card-img-top"
+                alt="Haircuts & Styling"
+              />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@awcreativeut"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Adam Winger</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/FkAZqQJTbXM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Haircuts & Styling</h5>
+                <p class="card-text">
+                  From modern styles to timeless classics, we craft your perfect
+                  look.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img
+                src="ap5.jpg"
+                class="card-img-top"
+                alt="Facials & Skin Care"
+              />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@enginakyurt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >engin akyurt</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/g-m8EDc4X6Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Facials & Skin Care</h5>
+                <p class="card-text">
+                  Rejuvenate your skin with our expert treatments and glow
+                  therapy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img
+                src="ap4.jpg"
+                class="card-img-top"
+                alt="Manicure & Pedicure"
+              />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@giorgiotrovato"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Giorgio Trovato</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/gb6gtiTZKB8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Manicure & Pedicure</h5>
+                <p class="card-text">
+                  Pamper your hands and feet with our luxury care and vibrant
+                  colors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img
+                src="ap7.jpg"
+                class="card-img-top"
+                alt="Bridal & Party Makeup"
+              />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@gift_habeshaw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gift Habeshaw</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/wbuQnKAHmZg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Bridal & Party Makeup</h5>
+                <p class="card-text">
+                  Flawless beauty on your big day with our signature glam touch.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img
+                src="ap13.jpg"
+                class="card-img-top"
+                alt="Waxing & Threading"
+              />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@runejohs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Rune Enstad</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/cowLgyb63c4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Waxing & Threading</h5>
+                <p class="card-text">
+                  Smooth and precise services in a hygienic environment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img src="ap14.jpg" class="card-img-top" alt="Spa & Relaxation" />
+              <div
+                class="photo-credit"
+                aria-hidden="true"
+                style="display: none"
+              >
+                Photo by
+                <a
+                  href="https://unsplash.com/@theanamcxr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Anam</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/photos/X1s5YSBw8lU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Spa & Relaxation</h5>
+                <p class="card-text">
+                  Indulge in calming massages and aromatic treatments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Excellence Paragraph -->
+        <div class="text-center mt-5">
+          <p class="fw-medium text-muted">
+            At Smoke Show, excellence isn’t just a promise — it's a practice.
+            Our dedicated team ensures every client leaves feeling confident,
+            refreshed, and truly pampered. Your beauty journey deserves nothing
+            less.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-5 text-center position-relative"
+      style="background: linear-gradient(90deg, #f30b96, #ef67bf); color: white"
+    >
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-2 d-none d-md-block">
+            <img
+              src="f2.png"
+              alt="Left"
+              class="img-fluid"
+              style="max-width: 100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2>📅 Book Your Appointment Today</h2>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              <a
+                href="https://maps.google.com/?q=123 Glam Street, Beauty City"
+                target="_blank"
+                class="footer-link"
+                >123 Glam Street, Beauty City</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-telephone-fill me-2"></i>
+              <a href="tel:+1234567890" class="footer-link">+123 456 7890</a>
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i>
+              <a href="mailto:contact@glamourtouch.com" class="footer-link"
+                >contact@glamourtouch.com</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-clock-fill me-2"></i>Open: Mon–Sat | 9 AM – 8 PM
+            </p>
+
+            <!-- 🎯 Social Media Icons -->
+            <div class="mt-4 d-flex justify-content-center gap-4">
+              <a
+                href="https://www.facebook.com/SmokeShowSalon"
+                target="_blank"
+                class="text-white fs-4"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/smokeshow_beauty"
+                target="_blank"
+                class="text-white fs-4"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/smokeshowstyle"
+                target="_blank"
+                class="text-white fs-4"
+                aria-label="X (Twitter)"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@SmokeShowToks"
+                target="_blank"
+                class="text-white fs-4"
+                aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block">
+            <img
+              src="f1.png"
+              alt="Right"
+              class="img-fluid"
+              style="max-width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
