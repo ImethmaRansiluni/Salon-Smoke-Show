@@ -31,8 +31,9 @@ Welcome to the **Smoke Show Salon** website — a modern, mobile-friendly beauty
 
 ## 🌐 Live Demo
 
-[Coming soon — hosted on GitHub Pages / Netlify / Vercel]
+Hosted Netlify - https://smoke-show-salon.netlify.app/home
 
 ## 📝 License
 
 This project is for educational/demo purposes only. All media used belongs to their respective creators (see in-page credits).
+As well as, this is a static website for Smoke Show Salon. Includes optimized content for SEO and responsive design.
