@@ -38,7 +38,7 @@
     }
 
    .NavContainer {
-  background: linear-gradient(90deg, #f30b96, #ef67bf);
+  background: linear-gradient(90deg,  #FFAAAA, #FF9898);
   width: 100%;
   position: fixed;
   top: 0;
@@ -48,11 +48,12 @@
 
 .navbar {
   padding: 0;
-  background: transparent; /* Let .NavContainer control background */
+  background: transparent !important; 
 }
 
 .navbar-collapse {
-  background: linear-gradient(90deg, #f30b96, #ef67bf); /* Ensure expanded menu has same background */
+  background: linear-gradient(90deg, #FFAAAA, #FF9898); 
+  background: transparent !important;
 }
 
 
@@ -76,9 +77,9 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      border: none; /* removes border */
-      outline: none; /* removes default outline */
-      box-shadow: none; /* removes focus ring (e.g., on click) */
+      border: none; 
+      outline: none; 
+      box-shadow: none;
     }
 
     .navbar-toggler:focus:not(:focus-visible) {
@@ -120,27 +121,27 @@
     }
 
     .carousel-caption-custom .btn {
-      background-color: #f30b96;
+      background-color: #FF9898;
       border: none;
     }
 
     .carousel-caption-custom .btn:hover {
-      background-color: #ef67bf;
+      background-color: #FFDCDC;
     }
 
     .footer-link {
-      color: white;
+      color: black;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     .footer-link:hover {
-      color: black;
+      color: white;
     }
 
     section.text-center p {
       font-size: 0.95rem;
-      line-height: 1.4; /* <- ADJUST THIS VALUE to control spacing */
+      line-height: 1.4; 
     }
 
     .service-highlight {
@@ -168,7 +169,7 @@
       border-radius: 10px;
     }
 
-    /* Increase carousel control button size for better mobile tap */
+    
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 3rem;
@@ -176,15 +177,19 @@
       background-size: 100% 100%;
     }
 
+    h2{
+      font-family: 'Oswald';
+    }
+    
     @media (max-width: 576px) {
       .navbar-brand img {
-        width: 50px;   /* <- change logo width */
-        height: 50px;  /* <- change logo height */
+        width: 50px;   
+        height: 50px;  
       }
 
       .navbar-brand h1 {
-        font-size: 20px;   /* <- ADJUST font size for mobile */
-        line-height: 1.0;  /* <- ADJUST line height */
+        font-size: 20px;  
+        line-height: 1.0;
       }
 
       .NavContainer {
@@ -224,7 +229,7 @@
 
       section.text-center p {
         font-size: 0.85rem;
-        line-height: 0.8;  /* <- ADJUST for mobile line gap */
+        line-height: 0.8;  
       }
     }
 
@@ -241,7 +246,7 @@
 <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid NavContainer">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center">
           <img src="logo1.png" alt="Logo" width="100" height="100" class="img-fluid">
           <h1 style="font-family: 'Cookie', cursive; font-weight: 400;">Smoke Show</h1>
         </a>
@@ -258,7 +263,6 @@
     </nav>
   </header>
 
-<!-- Video Carousel -->
 <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
   <div class="carousel-inner">
 
@@ -325,23 +329,23 @@
 <section class="py-5 px-3 px-md-5 bg-white">
   <div class="container">
     <div class="text-center mb-4">
-      <h2>💇‍♀️ About Us</h2>
+      <h2>About Us</h2>
       <p class="lead">At Smoke Show Salon, we believe beauty starts with confidence. From classic cuts to the latest trends, we offer personalized services to make you look and feel your best.</p>
     </div>
 
     <div class="row text-center">
       <div class="col-12 col-md-4">
-        <i class="bi bi-heart-fill" style="font-size: 2rem; color: #f30b96;"></i>
+        <i class="bi bi-heart-fill" style="font-size: 2rem; color: #FF9898;"></i>
         <h5 class="mt-2">Relaxing Atmosphere</h5>
         <p>Step into a world of comfort, care, and transformation.</p>
       </div>
       <div class="col-12 col-md-4">
-        <i class="bi bi-scissors" style="font-size: 2rem; color: #f30b96;"></i>
+        <i class="bi bi-scissors" style="font-size: 2rem; color: #FF9898;"></i>
         <h5 class="mt-2">Expert Stylists</h5>
         <p>Get pampered by professionals who know your style best.</p>
       </div>
       <div class="col-12 col-md-4">
-        <i class="bi bi-stars" style="font-size: 2rem; color: #f30b96;"></i>
+        <i class="bi bi-stars" style="font-size: 2rem; color: #FF9898;"></i>
         <h5 class="mt-2">Tailored Services</h5>
         <p>Beauty solutions crafted for your unique needs.</p>
       </div>
@@ -352,11 +356,10 @@
 <section class="py-5 px-3 px-md-5 bg-light">
   <div class="container">
     <div class="text-center mb-4">
-      <h2>✨ Our Services</h2>
+      <h2>Our Services</h2>
     </div>
 
     <div class="row align-items-center">
-      <!-- Left: Image Slider -->
       <div class="col-12 col-md-6 mb-4 mb-md-0 me-md-4">
         <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -391,22 +394,21 @@
         </div>
       </div>
 
-     <!-- Right: Service List -->
       <div class="col-12 col-md-5 d-flex justify-content-center">
         <div>
           <ul class="list-unstyled fs-5">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Haircuts & Styling</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Facials & Skin Care</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Manicure & Pedicure</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bridal & Party Makeup</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Waxing & Threading</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Spa & Relaxation</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Haircuts & Styling</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Facials & Skin Care</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Manicure & Pedicure</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Bridal & Party Makeup</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Waxing & Threading</li>
+            <li><i class="bi bi-bluesky me-2" style="color: #FF8282;"></i>Spa & Relaxation</li>
           </ul>
         </div>
       </div>
 
     <div class="text-center mt-4">
-      <a href="Services.html" class="btn btn-primary" style="background-color: #f30b96; border: none;">👉 View Full Services</a>
+      <a href="Services.html" class="btn btn-primary" style="background-color: #FF9898; border: none; color: #000000;">View Full Services</a>
     </div>
   </div>
 </section>
@@ -414,16 +416,16 @@
 <section class="py-5 px-3 px-md-5">
   <div class="container">
     <div class="text-center mb-4">
-      <h2>🌟 Why Choose Us?</h2>
+      <h2>Why Choose Us?</h2>
     </div>
 
     <div class="d-flex justify-content-center">
       <ul class="list-unstyled fs-5 text-start">
-        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Experienced Stylists</li>
-        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Premium Products</li>
-        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hygienic Environment</li>
-        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Affordable Packages</li>
-        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Customized Beauty Solutions</li>
+        <li><i class="bi bi-check-lg me-2" style="color: #FF6363;"></i>Experienced Stylists</li>
+        <li><i class="bi bi-check-lg me-2" style="color: #FF6363;"></i>Premium Products</li>
+        <li><i class="bi bi-check-lg me-2" style="color: #FF6363;"></i>Hygienic Environment</li>
+        <li><i class="bi bi-check-lg me-2" style="color: #FF6363;"></i>Affordable Packages</li>
+        <li><i class="bi bi-check-lg me-2" style="color: #FF6363;"></i>Customized Beauty Solutions</li>
       </ul>
     </div>
   </div>
@@ -432,7 +434,7 @@
 <section class="py-5 bg-light px-3 px-md-5">
   <div class="container">
     <div class="text-center mb-4">
-      <h2>📸 Our Works</h2>
+      <h2>Our Works</h2>
       <p class="lead">Client transformations and stunning salon interiors</p>
     </div>
     <div class="row g-3">
@@ -480,7 +482,7 @@
 
 <section
   class="py-5 text-center position-relative"
-  style="background: linear-gradient(90deg, #f30b96, #ef67bf); color: white"
+  style="background: linear-gradient(90deg, #FFAAAA, #FF9898); color: black"
 >
   <div class="container position-relative">
     <div class="row align-items-center">
@@ -517,33 +519,32 @@
           <i class="bi bi-clock-fill me-2"></i>Open: Mon–Sat | 9 AM – 8 PM
         </p>
 
-        <!-- 🎯 Social Media Icons -->
         <div class="mt-4 d-flex justify-content-center gap-4">
           <a
             href="https://www.facebook.com/SmokeShowSalon"
             target="_blank"
-            class="text-white fs-4"
+            class="text-black fs-4"
             aria-label="Facebook"
             ><i class="fab fa-facebook"></i
           ></a>
           <a
             href="https://www.instagram.com/smokeshow_beauty"
             target="_blank"
-            class="text-white fs-4"
+            class="text-black fs-4"
             aria-label="Instagram"
             ><i class="fab fa-instagram"></i
           ></a>
           <a
             href="https://x.com/smokeshowstyle"
             target="_blank"
-            class="text-white fs-4"
+            class="text-black fs-4"
             aria-label="X (Twitter)"
             ><i class="fab fa-twitter"></i
           ></a>
           <a
             href="https://www.tiktok.com/@SmokeShowToks"
             target="_blank"
-            class="text-white fs-4"
+            class="text-black fs-4"
             aria-label="TikTok"
             ><i class="fab fa-tiktok"></i
           ></a>

@@ -57,7 +57,7 @@
       }
 
       .NavContainer {
-        background: linear-gradient(90deg, #f30b96, #ef67bf);
+        background: linear-gradient(90deg, #ffaaaa, #ff9898);
         width: 100%;
         position: fixed;
         top: 0;
@@ -67,15 +67,12 @@
 
       .navbar {
         padding: 0;
-        background: transparent; /* Let .NavContainer control background */
+        background: transparent;
       }
 
       .navbar-collapse {
-        background: linear-gradient(
-          90deg,
-          #f30b96,
-          #ef67bf
-        ); /* Ensure expanded menu has same background */
+        background: linear-gradient(90deg, #ffaaaa, #ff9898);
+        background: transparent !important;
       }
 
       .navbar-brand,
@@ -98,9 +95,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border: none; /* removes border */
-        outline: none; /* removes default outline */
-        box-shadow: none; /* removes focus ring (e.g., on click) */
+        border: none;
+        outline: none;
+        box-shadow: none;
       }
 
       .navbar-toggler:focus:not(:focus-visible) {
@@ -110,7 +107,13 @@
 
       h3 {
         font-weight: bold;
-        color: #d6008f;
+        color: #ff6363;
+        -webkit-text-stroke: 0.3px #b03052;
+        font-family: "Oleo Script";
+      }
+
+      h2 {
+        font-family: "Oswald";
       }
 
       p {
@@ -126,34 +129,34 @@
       }
 
       .footer-link {
-        color: white;
+        color: black;
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       .footer-link:hover {
-        color: black;
+        color: white;
       }
 
       section.text-center p {
         font-size: 0.95rem;
-        line-height: 1.4; /* <- ADJUST THIS VALUE to control spacing */
+        line-height: 1.4;
       }
 
       @media (max-width: 576px) {
         .navbar-brand img {
-          width: 50px; /* <- change logo width */
-          height: 50px; /* <- change logo height */
+          width: 50px;
+          height: 50px;
         }
 
         .navbar-brand h1 {
-          font-size: 20px; /* <- ADJUST font size for mobile */
-          line-height: 1; /* <- ADJUST line height */
+          font-size: 20px;
+          line-height: 1;
         }
 
         section.text-center p {
           font-size: 0.85rem;
-          line-height: 0.8; /* <- ADJUST for mobile line gap */
+          line-height: 0.8;
         }
 
         .NavContainer {
@@ -167,7 +170,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid NavContainer">
-          <a class="navbar-brand d-flex align-items-center" href="#">
+          <a class="navbar-brand d-flex align-items-center">
             <img
               src="logo1.png"
               alt="Logo"
@@ -388,7 +391,7 @@
 
     <section
       class="py-5 text-center position-relative"
-      style="background: linear-gradient(90deg, #f30b96, #ef67bf); color: white"
+      style="background: linear-gradient(90deg, #ffaaaa, #ff9898); color: black"
     >
       <div class="container position-relative">
         <div class="row align-items-center">
@@ -425,33 +428,32 @@
               <i class="bi bi-clock-fill me-2"></i>Open: Mon–Sat | 9 AM – 8 PM
             </p>
 
-            <!-- 🎯 Social Media Icons -->
             <div class="mt-4 d-flex justify-content-center gap-4">
               <a
                 href="https://www.facebook.com/SmokeShowSalon"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="Facebook"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a
                 href="https://www.instagram.com/smokeshow_beauty"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="Instagram"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
                 href="https://x.com/smokeshowstyle"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="X (Twitter)"
                 ><i class="fab fa-twitter"></i
               ></a>
               <a
                 href="https://www.tiktok.com/@SmokeShowToks"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="TikTok"
                 ><i class="fab fa-tiktok"></i
               ></a>

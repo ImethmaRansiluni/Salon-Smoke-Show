@@ -57,7 +57,7 @@
       }
 
       .NavContainer {
-        background: linear-gradient(90deg, #f30b96, #ef67bf);
+        background: linear-gradient(90deg, #ffaaaa, #ff9898);
         width: 100%;
         position: fixed;
         top: 0;
@@ -67,15 +67,12 @@
 
       .navbar {
         padding: 0;
-        background: transparent; /* Let .NavContainer control background */
+        background: transparent;
       }
 
       .navbar-collapse {
-        background: linear-gradient(
-          90deg,
-          #f30b96,
-          #ef67bf
-        ); /* Ensure expanded menu has same background */
+        background: linear-gradient(90deg, #ffaaaa, #ff9898);
+        background: transparent !important;
       }
 
       .navbar-brand,
@@ -124,22 +121,28 @@
 
       .section-title {
         font-weight: bold;
-        color: #f30b96;
+        color: #ff6363;
+        -webkit-text-stroke: 0.3px #ffdcdc;
+        font-family: "Oleo Script";
       }
 
       .footer-link {
-        color: white;
+        color: black;
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       .footer-link:hover {
-        color: black;
+        color: white;
       }
 
       section.text-center p {
         font-size: 0.95rem;
         line-height: 1.4;
+      }
+
+      h2 {
+        font-family: "Oswald";
       }
 
       @media (max-width: 576px) {
@@ -166,11 +169,10 @@
     </style>
   </head>
   <body>
-    <!-- NAVIGATION BAR -->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid NavContainer">
-          <a class="navbar-brand d-flex align-items-center" href="#">
+          <a class="navbar-brand d-flex align-items-center">
             <img
               src="logo1.png"
               alt="Logo"
@@ -212,11 +214,10 @@
       </nav>
     </header>
 
-    <!-- SERVICES SECTION -->
     <section class="py-5" style="background-color: #f8f8f8">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="section-title">✨ Our Signature Services</h2>
+          <h2 class="section-title">Our Signature Services</h2>
           <p class="text-muted">
             Indulge in a world of beauty and relaxation tailored just for you.
           </p>
@@ -445,7 +446,6 @@
           </div>
         </div>
 
-        <!-- Excellence Paragraph -->
         <div class="text-center mt-5">
           <p class="fw-medium text-muted">
             At Smoke Show, excellence isn’t just a promise — it's a practice.
@@ -459,7 +459,7 @@
 
     <section
       class="py-5 text-center position-relative"
-      style="background: linear-gradient(90deg, #f30b96, #ef67bf); color: white"
+      style="background: linear-gradient(90deg, #ffaaaa, #ff9898); color: black"
     >
       <div class="container position-relative">
         <div class="row align-items-center">
@@ -496,33 +496,32 @@
               <i class="bi bi-clock-fill me-2"></i>Open: Mon–Sat | 9 AM – 8 PM
             </p>
 
-            <!-- 🎯 Social Media Icons -->
             <div class="mt-4 d-flex justify-content-center gap-4">
               <a
                 href="https://www.facebook.com/SmokeShowSalon"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="Facebook"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a
                 href="https://www.instagram.com/smokeshow_beauty"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="Instagram"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
                 href="https://x.com/smokeshowstyle"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="X (Twitter)"
                 ><i class="fab fa-twitter"></i
               ></a>
               <a
                 href="https://www.tiktok.com/@SmokeShowToks"
                 target="_blank"
-                class="text-white fs-4"
+                class="text-black fs-4"
                 aria-label="TikTok"
                 ><i class="fab fa-tiktok"></i
               ></a>
